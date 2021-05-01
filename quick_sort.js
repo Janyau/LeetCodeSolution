@@ -35,12 +35,6 @@ function swap(list, i, j) {
     list[j] = temp
 }
 
-function randArray(len, min, max) {
-	return Array.from({length:len}, v=> Math.floor(Math.random()*(max-min)) + min)
+module.exports = {
+	quickSortList
 }
-
-let list = randArray(10, 1, 10)
-console.log('origin--------', list);
-
-quickSortList(list)
-console.log('--------' ,list);

@@ -44,10 +44,6 @@ function merge(list, left, middle, right, tempList) {
     // console.log('----' ,tempList, list);
 }
 
-function randArray(len, min, max) {
-	return Array.from({length:len}, v=> Math.floor(Math.random()*(max-min)) + min)
+module.exports = {
+	mergeSort
 }
-
-let list = randArray(100, 1, 1000)
-mergeSort(list)
-console.log('--------' ,list);
